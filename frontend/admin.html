@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="initAdmin()">
+
+<div class="layout">
+
+  <!-- ================= SIDEBAR ================= -->
+  <div class="sidebar">
+
+    <h2>⚡ Admin Panel</h2>
+
+    <p id="adminName">Loading...</p>
+
+    <a href="#dashboard">🏠 Dashboard</a>
+    <a href="#users">👤 Users</a>
+    <a href="#projects">📁 Projects</a>
+    <a href="#team">👥 Team</a>
+
+    <button onclick="logout()">🚪 Logout</button>
+
+  </div>
+
+  <!-- ================= MAIN ================= -->
+  <div class="main">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <h2>Admin Dashboard</h2>
+    </div>
+
+    <!-- DASHBOARD STATS -->
+    <div id="dashboard" class="dashboard">
+
+      <div class="box">
+        <h3>Users</h3>
+        <p id="users" class="count">0</p>
+      </div>
+
+      <div class="box">
+        <h3>Projects</h3>
+        <p id="projects" class="count">0</p>
+      </div>
+
+      <div class="box">
+        <h3>Tasks</h3>
+        <p id="tasks" class="count">0</p>
+      </div>
+
+      <div class="box">
+        <h3>Team</h3>
+        <p id="team" class="count">0</p>
+      </div>
+
+    </div>
+
+    <!-- USERS -->
+    <div id="usersSection" class="section">
+      <h3>All Users</h3>
+      <div id="userList" class="list"></div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projectsSection" class="section">
+      <h3>Projects with Progress</h3>
+      <div id="projectsContainer" class="list"></div>
+    </div>
+
+    <!-- TEAM -->
+    <div id="teamSection" class="section">
+      <h3>Team Members</h3>
+      <div id="teamContainer" class="list"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      Team Task Manager © 2026
+    </div>
+
+  </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

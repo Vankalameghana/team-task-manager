@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<div class="navbar">
+  <h2>Task Manager</h2>
+
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">Team</a>
+  </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<div class="header">
+  <h1>User Dashboard</h1>
+  <p>Manage your projects, tasks and team efficiently</p>
+</div>
+
+<!-- ================= DASHBOARD GRID ================= -->
+<div class="dashboard">
+
+  <!-- ROW 1 -->
+  <div class="box">
+    <h2>Create Project</h2>
+    <input id="projectTitle" placeholder="Project Title" />
+    <textarea id="projectDesc" placeholder="Description"></textarea>
+    <input type="file" id="projectFile" />
+    <input type="date" id="deadline" />
+    <button onclick="submitProject()">Submit Project</button>
+  </div>
+
+  <div class="box">
+    <h2>Create Task</h2>
+    <input id="taskTitle" placeholder="Task Title" />
+    <input id="assignedTo" placeholder="User ID" />
+    <input id="projectId" placeholder="Project ID" />
+
+    <select id="status">
+      <option>pending</option>
+      <option>in progress</option>
+      <option>done</option>
+    </select>
+
+    <button onclick="submitTask()">Submit Task</button>
+  </div>
+
+  <!-- ROW 2 -->
+  <div class="box">
+    <h2>Add Team Member</h2>
+    <input id="memberName" placeholder="Name" />
+    <input id="memberEmail" placeholder="Email" />
+    <input id="memberRole" placeholder="Role" />
+    <input id="memberProjectId" placeholder="Project ID" />
+    <textarea id="memberContribution" placeholder="Contribution"></textarea>
+
+    <button onclick="submitTeamMember()">Submit Team Member</button>
+  </div>
+
+  <div class="box">
+    <h2>Team Members</h2>
+    <div id="teamList">Loading...</div>
+  </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<div class="footer">
+  <p>© 2026 Task Manager | Built with ❤️</p>
+</div>
+
+<script src="user.js"></script>
+
+</body>
+</html>

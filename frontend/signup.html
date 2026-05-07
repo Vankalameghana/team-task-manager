@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+
+  <style>
+    /* ================= PAGE CENTER ================= */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ================= CARD ================= */
+    .card {
+      width: 380px;
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    /* ================= INPUTS ================= */
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 12px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      background: #0f172a;
+      color: white;
+      border: 1px solid #334155;
+    }
+
+    input::placeholder {
+      color: #94a3b8;
+    }
+
+    /* ================= BUTTON ================= */
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #6366f1, #06b6d4);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #22c55e, #f97316);
+      transform: translateY(-2px);
+    }
+
+    /* ================= TEXT ================= */
+    p {
+      text-align: center;
+      color: #94a3b8;
+      margin-top: 12px;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="card">
+
+    <h1>Create Account</h1>
+
+    <form id="signupForm">
+
+      <input type="text" id="name" placeholder="Full Name" required>
+
+      <input type="email" id="email" placeholder="Email" required>
+
+      <input type="password" id="password" placeholder="Password" required>
+
+      <select id="role" required>
+        <option value="">Select Role</option>
+        <option value="admin">Admin</option>
+        <option value="user">User</option>
+      </select>
+
+      <button type="submit">Signup</button>
+
+    </form>
+
+    <p>
+      Already have an account?
+      <a href="login.html">Login</a>
+    </p>
+
+  </div>
+
+</body>
+</html>

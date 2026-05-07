@@ -1,0 +1,43 @@
+# 🚀 Team Task Manager
+
+A full-stack web application to manage projects, tasks, and team members with an admin dashboard.
+
+---
+
+## 📌 Features
+
+### 👤 User Features
+- Signup & Login system
+- Create Projects
+- Create Tasks
+- Add Team Members manually
+- Upload project files
+- View team contributions
+
+### 🛠️ Admin Features
+- View total Users, Projects, Tasks, Team Members
+- View all users with roles
+- View all projects and progress
+- View team contributions
+- Clean dashboard UI
+
+---
+
+## 🧑‍💻 Tech Stack
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+
+### Backend
+- Node.js
+- Express.js
+- SQLite3
+- JWT Authentication
+- Bcrypt (Password hashing)
+- Multer (File upload)
+
+---
+
+## 📂 Project Structure

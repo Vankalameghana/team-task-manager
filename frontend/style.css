@@ -1,0 +1,189 @@
+/* ================= ROOT THEME ================= */
+:root {
+  --bg: #0b1020;
+  --card: #121a2b;
+  --text: #e5e7eb;
+
+  --primary: #6366f1;
+  --secondary: #22c55e;
+  --accent: #f97316;
+  --pink: #ec4899;
+  --cyan: #06b6d4;
+
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ================= LAYOUT ================= */
+.layout {
+  display: flex;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: #0f172a;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid var(--border);
+}
+
+.sidebar h2 {
+  color: var(--cyan);
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+  background: var(--primary);
+}
+
+/* logout */
+.sidebar button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background: red;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ================= MAIN ================= */
+.main {
+  margin-left: 240px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background: linear-gradient(90deg, var(--primary), var(--cyan));
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* ================= HEADER ================= */
+.header {
+  padding: 20px;
+  text-align: center;
+}
+
+/* ================= DASHBOARD ================= */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ================= BOX ================= */
+.box {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= INPUTS ================= */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: white;
+}
+
+/* ================= BUTTON ================= */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: linear-gradient(90deg, var(--primary), var(--cyan));
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(90deg, var(--secondary), var(--accent));
+}
+
+/* ================= COUNT ================= */
+.count {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+/* ================= LIST ================= */
+.list .card {
+  background: #111827;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background: #0f172a;
+  border-top: 1px solid var(--border);
+  color: #94a3b8;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
