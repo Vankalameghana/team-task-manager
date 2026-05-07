@@ -28,10 +28,10 @@ Create new projects
 View all projects
 Store project details in database
 Track project status:
-🟥 Pending
-🟧 In Progress
-🟩 Completed
-✅ 3. Task Management
+ Pending
+ In Progress
+ Completed
+ 3. Task Management
 Create tasks inside projects
 Assign tasks to users
 Track task status
@@ -154,12 +154,3 @@ Protected API routes
 Role-based access control
 🔮 Future Improvements
 
-This project can be upgraded to production-level with:
-
-🔥 React frontend upgrade
-🔥 MongoDB / PostgreSQL database
-🔥 Real-time notifications (Socket.io)
-🔥 Drag & Drop Kanban Board (Trello-style)
-🔥 Email notifications
-🔥 Deployment (Render / Vercel / Netlify)
-🔥 Team invite system
